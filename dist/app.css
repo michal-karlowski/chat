@@ -194,11 +194,13 @@ body {
 
 * {
   box-sizing: border-box; }
+  *:focus {
+    outline: none; }
 
 .window {
   overflow: hidden;
   width: 340px;
-  margin: 5% auto;
+  margin: 10px auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background: #fff; }
   .window__header {
@@ -257,7 +259,7 @@ body {
     right: 0;
     border-top: 1px solid #ddd;
     background: #f6f6f6; }
-  .chat__input-file {
+  .chat__input-attach {
     position: absolute;
     border: 0 none;
     padding: 0 10px;
@@ -266,7 +268,7 @@ body {
     background-color: transparent;
     opacity: 0.6;
     transition: opacity 0.1s ease-in-out; }
-    .chat__input-file:hover {
+    .chat__input-attach:hover {
       opacity: 1; }
   .chat__input-field {
     width: 100%;
