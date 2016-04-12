@@ -1,0 +1,32 @@
+.window {
+    overflow: hidden;
+    width: $chat-w;
+    margin: 5% auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #fff;
+
+    &__header {
+        position: relative;
+    }
+
+    &__name {
+        overflow: hidden;
+        margin: 0;
+        padding: 0 5 * $spacing-default 0 $spacing-default;
+        line-height: $window-name-h;
+        font-weight: bold;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: $color-window-text;
+        background-color: $color-window-bg;
+    }
+
+    &__subtitle {
+        padding: 0 $spacing-default;
+        line-height: 22px;
+        font-size: 12px;
+        color: $color-window-bg;
+        background: $color-subtitle-bg;
+    }
+}

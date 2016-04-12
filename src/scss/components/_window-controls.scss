@@ -1,0 +1,29 @@
+.window-controls {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: $spacing-default / 2;
+    right: $spacing-default;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+        margin-left: $spacing-default;
+        color: $color-window-contorl;
+        cursor: pointer;
+        transition: color 0.1s ease-in-out;
+
+        &:hover {
+            color: lighten($color-window-contorl, 20%);
+        }
+
+        &--minimize {
+            line-height: 1;
+        }
+
+        &--close {
+            line-height: 1.5;
+        }
+    }
+}

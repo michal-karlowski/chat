@@ -1,0 +1,46 @@
+.chat {
+    position: relative;
+    width: $chat-w;
+    padding: 0 0 $chat-input-h $spacing-default;
+
+    &__messages {
+        overflow-y: scroll;
+        height: $chat-messages-h;
+        padding-top: $spacing-default;
+    }
+
+    &__input {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-top: 1px solid $color-border;
+        background: $color-chat-input-bg;
+    }
+
+    &__input-file {
+        position: absolute;
+        border: 0 none;
+        padding: 0 $spacing-default;
+        line-height: $chat-input-h;
+        font-size: 18px;
+        background-color: transparent;
+        opacity: 0.6;
+        transition: opacity 0.1s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__input-field {
+        width: 100%;
+        padding: 0 $spacing-default 0 4 * $spacing-default;
+        border: 0 none;
+        line-height: $chat-input-h;
+        font-size: 14px;
+        font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+        color: $color-text;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,66 @@
+.chat-message {
+    position: relative;
+    margin: 0 $spacing-default $spacing-default $author-photo-w + 2 * $spacing-default;
+    padding: $spacing-default 2 * $spacing-default;
+    font-size: 14px;
+    background-color: $color-message-bg;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: $spacing-default;
+        left: -$spacing-default;
+        width: 0;
+        height: 0;
+        border-top: $spacing-default solid $color-message-bg;
+        border-left: $spacing-default solid transparent;
+    }
+
+    &--active {
+        background-color: $color-message-active-bg;
+
+        &::before {
+            border-top: $spacing-default solid $color-message-active-bg;
+        }
+    }
+
+    &--info {
+        background-color: transparent;
+
+        &::before {
+            display: none;
+        }
+
+        .chat-message__content {
+            margin-bottom: 0;
+        }
+
+        .fa {
+            margin-left: -16px;
+        }
+    }
+
+    &__author-photo {
+        position: absolute;
+        top: 0;
+        left: -($author-photo-w + 2 * $spacing-default);
+    }
+
+    &__author-name {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    &__author-title {
+        opacity: 0.5;
+    }
+
+    &__content {
+        margin-bottom: $spacing-default;
+    }
+
+    &__date {
+        font-size: 11px;
+        opacity: 0.4;
+    }
+}
