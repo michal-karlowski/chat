@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Chat window</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="dist/app.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="window">
+            <div class="window__header">
+                <p class="window__name">Anna Amer</p>
+                <ul class="window-controls">
+                    <li class="window-controls__item window-controls__item--minimize" title="Minimize"><i class="fa fa-minus"></i></li>
+                    <li class="window-controls__item window-controls__item--close" title="Close"><i class="fa fa-times"></i></li>
+                </ul>
+                <div class="window__subtitle">About: Bacardi Casting</div>
+            </div>
+            <div class="window__content">
+                <div class="chat">
+                    <div class="chat__messages">
+                        <div class="chat-message">
+                            <img src="dist/images/avatar-a.png" class="chat-message__author-photo" alt="Message Author Photo" width="42" height="42">
+                            <div class="chat-message__author-name">Anna Amer</div>
+                            <div class="chat-message__author-title">talent</div>
+                            <div class="chat-message__content">
+                                Lorem ipsum dolor sit amet, lorem ipsum.
+                            </div>
+                            <div class="chat-message__date">16th Nov 15 - 13:05</div>
+                        </div>
+                        <div class="chat-message chat-message--active">
+                            <img src="dist/images/avatar-b.png" class="chat-message__author-photo" alt="Message Author Photo" width="42" height="42">
+                            <div class="chat-message__author-name">Zoo Casting Agency</div>
+                            <div class="chat-message__content">
+                                Lorem ipsum dolor sit amet, lorem ipsum.
+                            </div>
+                            <div class="chat-message__date">16th Nov 15 - 13:05</div>
+                        </div>
+                        <div class="chat-message">
+                            <img src="dist/images/avatar-a.png" class="chat-message__author-photo" alt="Message Author Photo" width="42" height="42">
+                            <div class="chat-message__author-name">Anna Amer</div>
+                            <div class="chat-message__author-title">talent</div>
+                            <div class="chat-message__content">
+                                Lorem ipsum dolor sit amet, lorem ipsum.
+                            </div>
+                            <div class="chat-message__date">16th Nov 15 - 13:05</div>
+                        </div>
+                        <div class="chat-message chat-message--info">
+                            <div class="chat-message__content">
+                                <i class="fa fa-info-circle"></i> Zoo Castting Agency created audition schedule request on 29th Nov 2016
+                            </div>
+                            <div class="chat-message__date">16th Nov 15 - 13:05</div>
+                        </div>
+                        <div class="chat-message chat-message--active">
+                            <img src="dist/images/avatar-b.png" class="chat-message__author-photo" alt="Message Author Photo" width="42" height="42">
+                            <div class="chat-message__author-name">Zoo Casting Agency</div>
+                            <div class="chat-message__content">
+                                Lorem ipsum dolor sit amet, lorem ipsum.
+                            </div>
+                            <div class="chat-message__date">16th Nov 15 - 13:05</div>
+                        </div>
+                    </div>
+                    <div class="chat__input">
+                        <button class="chat__input-file"><i class="fa fa-paperclip"></i></button>
+                        <input type="text" class="chat__input-field" placeholder="What are you thinking about..."></input>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+        </div>
+    </body>
+</html>
